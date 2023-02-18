@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            display: flex;
+            align-items: center;
+            background-color: chartreuse;
+            border:none;
+            border-radius: 6px;
+            transition: all 0.5s ease-in-out;
+            margin-top: 5px;
+            cursor: pointer;
+            height: 25px;
+           
+        }
+        .btn:hover{
+            background-color: rgb(96, 192, 0);
+            color: rgb(21, 21, 21);
+    
+        }
+        .btn-reload{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>Guessing Game</h3>
+    <form class="user-choise" id="form">
+        <label>User Choice</label>
+        <input type="text" name="" id="user-input" placeholder="Your guess number(1-10)">
+        <button class="btn" type="submit">Submit</button>
+    </form>
+    <br>
+    <div class="result">
+        <em id="result"></em>
+    </div>
+    <button class="btn btn-reload" id="reload-btn">
+        <p>Play Again?</p>
+        <img src="https://img.icons8.com/ios-glyphs/20/null/restart.png"/>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
